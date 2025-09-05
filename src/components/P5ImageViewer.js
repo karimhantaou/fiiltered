@@ -109,8 +109,9 @@ export default function P5ImageViewer({
 
             <div className={"option"}>
                 <div className={"algorithm"}>
-                    <h1>Alorithms</h1>
+                    <h1>Algorithms</h1>
                     <div>
+                        <div className={"algo-box"}><input type="checkbox" name="None" checked/> <label>None</label></div>
                         <div className={"algo-box"}><input type="checkbox" name="Bayer"/> <label>Bayer</label></div>
                         <div className={"algo-box"}><input type="checkbox" name="Floyd-Steinberg"/> <label>Floyd-Steinberg</label></div>
                         <div className={"algo-box"}><input type="checkbox" name="Atkinson"/> <label>Atkinson</label></div>
