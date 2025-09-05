@@ -7,7 +7,7 @@ const pageHeight = window.innerHeight;
 
 export default function P5ImageViewer({
                                           defaultSrc = "../assets/default/default.png",
-                                          width = pageWidth * 0.6,
+                                          width = pageWidth * 0.8,
                                           height = pageHeight * 0.6,
                                           className = "canva",
                                       }) {
@@ -110,9 +110,20 @@ export default function P5ImageViewer({
             <div className={"option"}>
                 <div className={"algorithm"}>
                     <h1>Alorithms</h1>
+                    <div>
+                        <div className={"algo-box"}><input type="checkbox" name="Bayer"/> <label>Bayer</label></div>
+                        <div className={"algo-box"}><input type="checkbox" name="Floyd-Steinberg"/> <label>Floyd-Steinberg</label></div>
+                        <div className={"algo-box"}><input type="checkbox" name="Atkinson"/> <label>Atkinson</label></div>
+                    </div>
                 </div>
                 <div className={"setting"}>
                     <h1>Settings</h1>
+                    <div>
+                        <div className={"algo-box"}><input type="range" id="volume" name="volume" min="0" max="11"/><label>Volume</label></div>
+                        <div className={"algo-box"}><input type="range" id="volume" name="volume" min="0" max="11"/><label>Volume</label></div>
+                        <div className={"algo-box"}><input type="range" id="volume" name="volume" min="0" max="11"/><label>Volume</label></div>
+
+                    </div>
                 </div>
             </div>
 

@@ -57,5 +57,40 @@ canvas {
 }
 
 .option h1{
-    font-size: 1vw;
+    font-size: 0.8vw;
+    font-weight: normal;
+}
+
+.option div{
+    width: 100%;
+}
+
+.algo-box{
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    accent-color: #353535;
+}
+
+input[type="range"] {
+    appearance: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+    background: #323232;
+    height: 1px;
+    border-radius: 0;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    background: white;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius:4px;
 }
